@@ -1,0 +1,14 @@
+name: Unit Test
+
+on:
+    push:
+        branches: [production]
+
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: loop through each module folder and build it
